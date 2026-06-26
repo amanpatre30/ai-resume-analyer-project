@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-aman-backend
+    env: node
+    plan: starter
+    root: backend_ai
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: ai-aman-frontend
+    env: node
+    plan: starter
+    root: frontend_ai
+    buildCommand: npm install && npm run build
+    startCommand: npm run start

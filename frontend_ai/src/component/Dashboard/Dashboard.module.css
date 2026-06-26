@@ -1,0 +1,410 @@
+.Dashboard {
+  flex: 0.8;
+  min-height: 100vh;
+  overflow-y: auto;
+
+  padding: 50px;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 30px;
+}
+
+/* LEFT SECTION */
+
+.DashboardLeft {
+  flex: 1;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  background-color: white;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.DashboardHeaderTitle {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0b0b5a;
+}
+
+.DashboardHeaderLargeTitle {
+  font-size: 52px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #111;
+}
+
+.alertInfo {
+  width: 100%;
+  box-sizing: border-box;
+
+  border-radius: 20px;
+  padding: 20px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  margin: 40px 0;
+
+  font-size: 16px;
+  background-color: #f8f9ff;
+}
+
+.DashboardInstruction {
+  margin-left: 20px;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.DashboardUploadResume {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.DashboardResumeBlock {
+  flex: 1;
+  min-width: 250px;
+
+  background-color: white;
+  border-radius: 20px;
+
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  font-size: 22px;
+  font-weight: 500;
+
+  border: 2px dashed #0b0b5a;
+}
+
+.analyzeAIBtn {
+  font-size: 18px;
+  cursor: pointer;
+
+  padding: 16px 32px;
+
+  color: white;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, orange, red);
+
+  border-radius: 30px;
+  border: none;
+
+  transition: 0.3s ease;
+}
+
+.analyzeAIBtn:hover {
+  transform: scale(1.05);
+}
+
+input {
+  display: none;
+}
+
+.jobDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  margin-top: 40px;
+
+  flex-wrap: wrap;
+}
+
+.textArea {
+  flex: 1;
+  min-width: 300px;
+
+  outline: none;
+
+  border-radius: 20px;
+  border: 2px solid rgb(14, 14, 97);
+
+  padding: 15px 20px;
+
+  box-sizing: border-box;
+
+  resize: none;
+
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.textArea:focus {
+  border-color: orange;
+}
+
+.AnalyzeBtn {
+  width: 150px;
+  height: 150px;
+
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(90deg, orange, red);
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: white;
+  cursor: pointer;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.AnalyzeBtn:hover {
+  transform: scale(1.08);
+}
+
+.DashboardInputField:hover {
+  transform: scale(1.08);
+}
+
+/* RIGHT SECTION */
+
+.DashboardRight {
+  width: 300px;
+
+  height: fit-content;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.DashboardRightTopCard {
+  background-color: white;
+
+  border-radius: 20px;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.DashboardRightTopCard div:first-child {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.profileImg {
+  width: 85px;
+  height: 85px;
+
+  border-radius: 50%;
+
+  margin: 20px 0;
+}
+
+.feedbackContent {
+  font-weight: 300;
+  text-align: start;
+}
+
+/* ========================= */
+/* TABLET VIEW */
+/* ========================= */
+
+@media screen and (max-width: 1024px) {
+
+  .Dashboard {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .DashboardLeft {
+    order: 1;
+    width: 100%;
+  }
+
+  .DashboardRight {
+    order: 2;
+
+    width: 100%;
+    margin-top: 30px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .DashboardRightTopCard {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .DashboardHeaderLargeTitle {
+    font-size: 42px;
+  }
+
+  .AnalyzeBtn {
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+  }
+}
+
+/* ========================= */
+/* MOBILE VIEW */
+/* ========================= */
+
+@media screen and (max-width: 768px) {
+
+  .Dashboard {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .DashboardLeft {
+    order: 1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .DashboardRight {
+    order: 2;
+
+    width: 100%;
+    margin-top: 20px;
+
+    flex-direction: column;
+  }
+
+  .DashboardHeaderTitle {
+    font-size: 22px;
+  }
+
+  .DashboardHeaderLargeTitle {
+    font-size: 34px;
+  }
+
+  .DashboardUploadResume {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .DashboardResumeBlock {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .jobDesc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textArea {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .AnalyzeBtn {
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
+  }
+
+  .DashboardRightTopCard {
+    width: 100%;
+  }
+
+  .profileImg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE VIEW */
+/* ========================= */
+
+@media screen and (max-width: 480px) {
+
+  .Dashboard {
+    padding: 12px;
+  }
+
+  .DashboardLeft {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .DashboardHeaderTitle {
+    font-size: 18px;
+  }
+
+  .DashboardHeaderLargeTitle {
+    font-size: 28px;
+  }
+
+  .alertInfo {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .DashboardInstruction {
+    margin-left: 10px;
+  }
+
+  .DashboardResumeBlock {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .analyzeAIBtn {
+    width: 100%;
+    text-align: center;
+
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .textArea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .AnalyzeBtn {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+
+  .DashboardRightTopCard {
+    padding: 20px 15px;
+  }
+
+  .DashboardRightTopCard div:first-child {
+    font-size: 18px;
+  }
+
+  .profileImg {
+    width: 60px;
+    height: 60px;
+  }
+}
