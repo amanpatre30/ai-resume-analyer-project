@@ -13,7 +13,9 @@ app.use(
     origin: process.env.CORS_ORIGIN || "http://localhost:5173",
   }),
 );
-
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
 const UserRoutes = require("./Routes/user");
 const ResumeRoutes = require("./Routes/resume");
 
