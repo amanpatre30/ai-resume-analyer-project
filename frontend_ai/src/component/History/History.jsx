@@ -34,7 +34,7 @@ const History = () => {
 
         console.log(error)
 
-        alert("Something went wrong")
+        setData([])
 
       } finally {
 
